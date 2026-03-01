@@ -1,0 +1,85 @@
+.ant-btn {
+  height: 38px;
+  padding: 4px 12px !important;
+
+  &-lg {
+    height: 44px;
+  }
+
+  &-sm {
+    height: 32px;
+  }
+
+  &-icon-only {
+    width: auto !important;
+  }
+
+  &-block {
+    width: 100% !important;
+  }
+
+  &-color-primary {
+    color: var(--color-primary-1000) !important;
+
+    &.ant-btn-variant {
+      &-solid {
+        background-color: var(--color-primary-1000) !important;
+        color: var(--color-white) !important;
+      }
+
+      &-outlined,
+      &-dashed {
+        border-color: var(--color-primary-1000) !important;
+      }
+
+      &-filled {
+        background-color: var(--color-primary-opacity-10) !important;
+      }
+
+      &-text {
+        background-color: #ffffff33 !important;
+        color: var(--color-white) !important;
+      }
+
+      &-text:not(:disabled):not(.ant-btn-disabled):hover {
+        background-color: var(--color-primary-opacity-10) !important;
+      }
+    }
+  }
+
+  &-color-orange {
+    color: var(--color-orange-opacity-110) !important;
+
+    &.ant-btn-variant {
+      &-filled {
+        background-color: var(--color-orange-opacity-20) !important;
+      }
+
+      &-text {
+        background-color: #ffffff33 !important;
+        color: var(--color-white) !important;
+      }
+
+      &-text:not(:disabled):not(.ant-btn-disabled):hover {
+        background-color: var(--color-orange-opacity-20) !important;
+      }
+    }
+  }
+
+  &-color-dangerous {
+    &.ant-btn-variant {
+      &-filled {
+        background-color: var(--color-red-opacity-20) !important;
+      }
+
+      &-text {
+        background-color: #ffffff33 !important;
+        color: var(--color-white) !important;
+      }
+
+      &-text:not(:disabled):not(.ant-btn-disabled):hover {
+        background-color: var(--color-red-opacity-20) !important;
+      }
+    }
+  }
+}

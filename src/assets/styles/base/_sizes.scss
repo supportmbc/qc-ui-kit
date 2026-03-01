@@ -1,0 +1,72 @@
+@mixin desktop {
+  // FONT SIZES
+  --text-xxl: 32px;
+  --text-xl: 24px;
+  --text-lg: 20px;
+  --text-md: 16px;
+  --text-sm: 14px;
+  --text-xs: 12px;
+
+  // BORDER RADIUS
+  --radius-xxl: 16px;
+  --radius-xl: 12px;
+  --radius-lg: 8px;
+  --radius-md: 6px;
+  --radius-sm: 4px;
+  --radius-xs: 2px;
+}
+
+@mixin tablet {
+  // FONT SIZES
+  --text-xxl: 24px;
+  --text-xl: 20px;
+  --text-lg: 18px;
+  --text-md: 14px;
+  --text-sm: 12px;
+  --text-xs: 8px;
+
+  // BORDER RADIUS
+  --radius-xxl: 16px;
+  --radius-xl: 12px;
+  --radius-lg: 8px;
+  --radius-md: 6px;
+  --radius-sm: 4px;
+  --radius-xs: 2px;
+}
+
+@mixin mobile {
+  // FONT SIZES
+  --text-xxl: 24px;
+  --text-xl: 18px;
+  --text-lg: 16px;
+  --text-md: 13px;
+  --text-sm: 12px;
+  --text-xs: 8px;
+
+  // BORDER RADIUS
+  --radius-xxl: 16px;
+  --radius-xl: 12px;
+  --radius-lg: 8px;
+  --radius-md: 6px;
+  --radius-sm: 4px;
+  --radius-xs: 2px;
+}
+
+// Default sizes for Desktop
+:root {
+  @include desktop;
+}
+
+// Sizes for Tablet
+@media (max-width: 1024px) {
+  :root {
+    @include tablet;
+  }
+}
+
+// Sizes for Tablet
+@media (max-width: 768px) {
+  :root {
+    @include mobile;
+  }
+}

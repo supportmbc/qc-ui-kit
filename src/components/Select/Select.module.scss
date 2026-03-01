@@ -1,0 +1,59 @@
+.wrapper {
+  position: relative;
+
+  &--state {
+    &-default {
+      .select {
+        border-color: var(--color-dark-400);
+      }
+    }
+
+    &-success {
+      .select {
+        border-color: var(--color-primary-1000);
+      }
+    }
+
+    &-error {
+      .select {
+        border-color: var(--color-red);
+      }
+    }
+  }
+
+  &:not(.wrapper--disabled):hover,
+  &:not(.wrapper--disabled).wrapper--focus {
+    .select {
+      border-color: var(--color-primary-1000);
+      box-shadow: var(--shadow-md);
+    }
+  }
+
+  &--disabled {
+    .select {
+      background-color: var(--color-gray-500);
+      box-shadow: none;
+      cursor: not-allowed;
+    }
+  }
+}
+
+.select {
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-white);
+  color: var(--color-text-primary);
+  border: 1px solid transparent;
+  border-radius: var(--radius-sm);
+  transition: all 0.3s ease-in-out;
+}
+
+.message {
+  position: absolute;
+  top: calc(100% + 3px);
+  left: 0;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 1;
+  color: var(--color-red);
+}

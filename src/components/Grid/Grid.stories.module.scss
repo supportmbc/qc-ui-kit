@@ -1,0 +1,19 @@
+.wrapper {
+  width: 100%;
+  padding: 32px;
+}
+
+.item {
+  min-height: 30px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 16px 0;
+  color: #fff;
+  text-align: center;
+  background: #0092ff;
+  border-radius: 0;
+
+  &:nth-child(odd) {
+    background: rgba(0, 146, 255, 0.75);
+  }
+}

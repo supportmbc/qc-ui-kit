@@ -1,0 +1,21 @@
+.ant-drawer {
+  &-bottom {
+    .ant-drawer-content {
+      border-top-left-radius: var(--radius-xxl) !important;
+      border-top-right-radius: var(--radius-xxl) !important;
+    }
+  }
+
+  &-header {
+    padding: 16px !important;
+
+    &-title {
+      flex-direction: row-reverse;
+      justify-content: space-between;
+    }
+  }
+
+  &-body {
+    padding: 16px !important;
+  }
+}

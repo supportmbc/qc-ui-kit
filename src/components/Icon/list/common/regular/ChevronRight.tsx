@@ -1,0 +1,15 @@
+import React from 'react';
+
+const ChevronRight: React.FC = () => (
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path
+      d="M8.33325 14.1665L11.6666 9.99984L8.33325 5.83317"
+      stroke="currentColor"
+      strokeWidth="1.5"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    />
+  </svg>
+);
+
+export default ChevronRight;

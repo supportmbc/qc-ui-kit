@@ -1,0 +1,13 @@
+html,
+body {
+  overflow: auto;
+}
+
+body {
+  background-color: #f6f8fa;
+
+  #root {
+    position: relative;
+    z-index: 1;
+  }
+}

@@ -1,0 +1,45 @@
+.wrapper {
+  display: block;
+  width: 100%;
+  padding: 4px 12px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-sm);
+  box-shadow: var(--shadow-md);
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  cursor: pointer;
+  user-select: none;
+
+  &Content {
+    flex: 1;
+  }
+
+  &Input {
+    margin-right: 12px;
+  }
+
+  &Title {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 150%;
+    color: #0e161f;
+  }
+
+  &Description {
+    margin-top: 8px;
+    font-weight: 500;
+    font-size: 12px;
+  }
+
+  + .option {
+    border-top: 1px solid #eaeff3;
+  }
+
+  &Tags {
+    min-width: max-content;
+  }
+}

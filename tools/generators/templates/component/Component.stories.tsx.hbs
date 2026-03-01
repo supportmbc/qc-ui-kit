@@ -1,0 +1,15 @@
+import {{pascalCase name}} from './{{pascalCase name}}';
+
+export default {
+  title: 'Components/{{pascalCase name}}',
+  component: {{pascalCase name}}
+};
+
+export const ToStorybook = props => <{{pascalCase name}} {...props} />;
+
+ToStorybook.story = {
+  name: '{{pascalCase name}}',
+  args: {
+    children: '{{pascalCase name}} component'
+  }
+};

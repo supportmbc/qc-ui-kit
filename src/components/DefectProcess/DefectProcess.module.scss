@@ -1,0 +1,71 @@
+.wrapper {
+  display: flex;
+
+  &--failed {
+    .option--done:last-child {
+      .optionIcon {
+        background-color: var(--color-red);
+      }
+    }
+  }
+}
+
+.option {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 85px;
+  padding: 40px 0 0;
+  background-color: transparent;
+
+  &--done {
+    .optionIcon {
+      background-color: var(--color-green);
+    }
+  }
+
+  &--current {
+    .optionIcon {
+      background-color: var(--color-orange);
+    }
+  }
+
+  &Icon {
+    flex-shrink: 0;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    margin-bottom: 8px;
+    background-color: var(--color-dark-300);
+    border-radius: 50%;
+  }
+
+  &Number {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-dark-1000);
+    transition: all 0.2s linear;
+  }
+
+  &Bar {
+    position: absolute;
+    top: 17px;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+  }
+
+  &Title {
+    text-align: center;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 22px;
+    color: var(--color-dark-1000);
+    transition: all 0.2s linear;
+  }
+}

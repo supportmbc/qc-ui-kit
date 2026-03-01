@@ -1,0 +1,11 @@
+@use './base/normalize' as *;
+@use './base/typography' as *;
+@use './base/responsive' as *;
+@use './base/themes' as *;
+@use './base/sizes' as *;
+@use './base/base' as *;
+
+:root {
+  @include main-colors;
+  @include theme-brand;
+}

@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 50" fill="none">
+  <circle cx="25" cy="25" r="20" fill="#3b82f6"/>
+  <text x="25" y="32" text-anchor="middle" font-size="24" font-family="Arial" fill="#fff" font-weight="bold">M</text>
+  <text x="60" y="32" font-size="28" font-family="Arial" fill="#ffffff" font-weight="bold">MBC UI Kit</text>
+</svg>

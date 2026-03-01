@@ -1,0 +1,55 @@
+.wrapper {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 6px;
+  padding: 4px 6px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+  background-color: var(--color-orange-opacity-20);
+  color: var(--color-orange);
+  border-radius: var(--radius-md);
+
+  &--variant {
+    &-NEW {
+      background-color: var(--color-blue-opacity-16);
+      color: var(--color-blue);
+    }
+
+    &-READ {
+      background-color: var(--color-light-green-opacity-16);
+      color: var(--color-light-green);
+    }
+
+    &-IN_PROGRESS {
+      background-color: var(--color-orange-opacity-20);
+      color: var(--color-orange);
+    }
+
+    &-IN_REVIEW {
+      background-color: var(--color-teal-blue-opacity-20);
+      color: var(--color-teal-blue-opacity-80);
+    }
+
+    &-NOT_FIXED {
+      background-color: var(--color-red-opacity-20);
+      color: var(--color-red);
+    }
+
+    &-FIXED {
+      background-color: var(--color-green-opacity-20);
+      color: var(--color-green);
+    }
+
+    &-IN_CORRECT {
+      background-color: var(--color-purple-opacity-16);
+      color: var(--color-purple);
+    }
+
+    &-DELETED {
+      background-color: var(--color-dark-opacity-16);
+      color: var(--color-dark-900);
+    }
+  }
+}

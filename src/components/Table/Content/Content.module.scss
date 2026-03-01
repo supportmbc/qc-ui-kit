@@ -1,0 +1,20 @@
+.tooltip {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+
+  &Icon {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 18px;
+    height: 18px;
+    font-weight: 700;
+    line-height: 1;
+    font-size: 14px;
+    color: var(--color-gray-1000);
+    border: 2px solid var(--color-gray-1000);
+    border-radius: 50%;
+  }
+}

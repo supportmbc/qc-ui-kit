@@ -1,0 +1,15 @@
+.ant-picker {
+  height: 38px !important;
+
+  &-small {
+    height: 32px !important;
+  }
+
+  &-large {
+    height: 44px !important;
+  }
+
+  &-outlined:focus-within {
+    box-shadow: none !important;
+  }
+}

@@ -1,0 +1,86 @@
+import React, { useState } from 'react';
+import { IMaskInput } from 'react-imask';
+
+import { NumberInputProps } from './Types';
+import Wrapper from './Wrapper';
+
+export type IProps = NumberInputProps;
+
+const NumberInput: React.FC<IProps> = ({
+  id,
+  state,
+  size = 'medium',
+  min,
+  max,
+  value,
+  placeholder,
+  disabled,
+  hidden,
+  overwrite = false,
+  readOnly,
+  autoFocus,
+  onChange,
+  onBlur,
+  valuePrefix,
+  valueSuffix,
+  prefix,
+  suffix,
+  iconPrefix,
+  onIconPrefix,
+  iconSuffix,
+  onIconSuffix,
+  message
+}) => {
+  const [isFocused, setFocused] = useState(false);
+
+  return (
+    <Wrapper
+      {...{
+        size,
+        state,
+        isFocused,
+        disabled,
+        hidden,
+        prefix,
+        suffix,
+        iconPrefix,
+        onIconPrefix,
+        iconSuffix,
+        onIconSuffix,
+        message
+      }}
+    >
+      <IMaskInput
+        {...{ id, placeholder, disabled, readOnly, autoFocus, overwrite }}
+        value={String(value || '')}
+        type="tel"
+        onAccept={(value: string) => onChange && onChange(value)}
+        onFocus={() => setFocused(true)}
+        onBlur={e => {
+          setFocused(false);
+          onBlur?.(e);
+        }}
+        unmask
+        lazy={false}
+        autofix={false}
+        mask={`${valuePrefix || ''}amount${valueSuffix || ''}`}
+        blocks={{
+          amount: {
+            mask: Number,
+            min,
+            max,
+            scale: 2,
+            radix: '.',
+            normalizeZeros: true
+          }
+        }}
+        autoComplete="off"
+        autoCorrect="off"
+        autoCapitalize="off"
+        spellCheck="false"
+      />
+    </Wrapper>
+  );
+};
+
+export default NumberInput;

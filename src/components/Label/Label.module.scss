@@ -1,0 +1,16 @@
+.wrapper {
+  width: 100%;
+}
+
+.title {
+  display: flex;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 13px;
+  color: var(--color-gray-1000);
+
+  div {
+    margin-right: 2px;
+    color: var(--color-red);
+  }
+}

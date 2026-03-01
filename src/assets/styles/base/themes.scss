@@ -1,0 +1,168 @@
+@mixin main-colors {
+  // Colors
+  --color-dark-1000: #18181c;
+  --color-dark-900: #60607c;
+  --color-dark-800: #828288;
+  --color-dark-700: #8f8f94;
+  --color-dark-600: #afafb3;
+  --color-dark-500: #c8c8cd;
+  --color-dark-400: #d2d2d7;
+  --color-dark-300: #e6e6eb;
+  --color-dark-200: #f3f3f8;
+  --color-dark-100: #f7f7f7;
+  --color-dark-opacity-16: #5c5c6229;
+
+  --color-white: #ffffff;
+  --color-white-opacity-70: #ffffffb2;
+  --color-white-opacity-30: #ffffff4d;
+  --color-white-opacity-20: #ffffff33;
+
+  --color-blue: #5957d7;
+  --color-blue-opacity-16: #5957d729;
+
+  --color-gray-1000: #737687;
+  --color-gray-900: #60607c;
+  --color-gray-850: #9da0ab;
+  --color-gray-500: #e3e4e7;
+  --color-gray-300: #f1f2f3;
+  --color-gray-200: #f8f8f9;
+
+  --color-surface: #eaeaf4;
+
+  --color-teal-blue-opacity-80: #5bc9fb;
+  --color-teal-blue-opacity-40: #5bc9fb66;
+  --color-teal-blue-opacity-20: #5bc9fb33;
+
+  --color-green: #35c85a;
+  --color-green-opacity-110: #24b248;
+  --color-green-opacity-40: #35c85a66;
+  --color-green-opacity-20: #35c85a33;
+
+  --color-red: #ff3b30;
+  --color-red-opacity-110: #df3128;
+  --color-red-opacity-40: #ff3b3066;
+  --color-red-opacity-20: #ff3b3033;
+
+  --color-orange: #ff9500;
+  --color-orange-opacity-110: #ee8b00;
+  --color-orange-opacity-40: #ff950066;
+  --color-orange-opacity-20: #ff950033;
+
+  --color-purple: #9935c8;
+  --color-purple-opacity-16: #9935c829;
+
+  --color-light-green: #97c02f;
+  --color-light-green-opacity-16: #97c02f29;
+
+  // Shadows
+  --shadow-xxl: 0 60px 120px 0 #0f1e3d0f;
+  --shadow-xl: 0 30px 60px 0 #0f1e3d0f;
+  --shadow-lg: 0 10px 30px 0 #0f1e3d0f;
+  --shadow-md: 0 2px 15px 0 #0f1e3d0f;
+  --shadow-sm: 0 2px 10px 0 #0f1e3d0f;
+  --shadow-xs: 0 2px 8px 0 #0f1e3d0f;
+}
+
+@mixin theme-brand {
+  --color-primary-1100: #4240ac;
+  --color-primary-1000: #5957d7;
+  --color-primary-opacity-90: #5957d7e6;
+  --color-primary-opacity-80: #5957d7cc;
+  --color-primary-opacity-70: #5957d7b3;
+  --color-primary-opacity-60: #5957d799;
+  --color-primary-opacity-50: #5957d780;
+  --color-primary-opacity-40: #5957d766;
+  --color-primary-opacity-30: #5957d74d;
+  --color-primary-opacity-20: #5957d733;
+  --color-primary-opacity-10: #5957d71a;
+}
+
+@mixin theme-dark-blue {
+  --color-primary-1100: #3d679e;
+  --color-primary-1000: #578ed7;
+  --color-primary-opacity-90: #578ed7e6;
+  --color-primary-opacity-80: #578ed7cc;
+  --color-primary-opacity-70: #578ed7b3;
+  --color-primary-opacity-60: #578ed799;
+  --color-primary-opacity-50: #578ed780;
+  --color-primary-opacity-40: #578ed766;
+  --color-primary-opacity-30: #578ed74d;
+  --color-primary-opacity-20: #578ed733;
+  --color-primary-opacity-10: #578ed71a;
+}
+
+@mixin theme-teal-blue {
+  --color-primary-1100: #3d9c91;
+  --color-primary-1000: #4fc5b7;
+  --color-primary-opacity-90: #4fc5b7e6;
+  --color-primary-opacity-80: #4fc5b7cc;
+  --color-primary-opacity-70: #4fc5b7b3;
+  --color-primary-opacity-60: #4fc5b799;
+  --color-primary-opacity-50: #4fc5b780;
+  --color-primary-opacity-40: #4fc5b766;
+  --color-primary-opacity-30: #4fc5b74d;
+  --color-primary-opacity-20: #4fc5b733;
+  --color-primary-opacity-10: #4fc5b71a;
+}
+
+@mixin theme-green {
+  --color-primary-1100: #2d8b51;
+  --color-primary-1000: #3db76c;
+  --color-primary-opacity-90: #3db76ce6;
+  --color-primary-opacity-80: #3db76ccc;
+  --color-primary-opacity-70: #3db76cb2;
+  --color-primary-opacity-60: #3db76c99;
+  --color-primary-opacity-50: #3db76c80;
+  --color-primary-opacity-40: #3db76c66;
+  --color-primary-opacity-30: #3db76c4d;
+  --color-primary-opacity-20: #3db76c33;
+  --color-primary-opacity-10: #3db76c1a;
+}
+
+@mixin theme-orange {
+  --color-primary-1100: #bc6e4d;
+  --color-primary-1000: #d77d57;
+  --color-primary-opacity-90: #d77d57e6;
+  --color-primary-opacity-80: #d77d57cc;
+  --color-primary-opacity-70: #d77d57b2;
+  --color-primary-opacity-60: #d77d5799;
+  --color-primary-opacity-50: #d77d5780;
+  --color-primary-opacity-40: #d77d5766;
+  --color-primary-opacity-30: #d77d574d;
+  --color-primary-opacity-20: #d77d5733;
+  --color-primary-opacity-10: #d77d571a;
+}
+
+@mixin theme-purple {
+  --color-primary-1100: #7b1191;
+  --color-primary-1000: #9d32b2;
+  --color-primary-opacity-90: #9d32b2e6;
+  --color-primary-opacity-80: #9d32b2cc;
+  --color-primary-opacity-70: #9d32b2b2;
+  --color-primary-opacity-60: #9d32b299;
+  --color-primary-opacity-50: #9d32b280;
+  --color-primary-opacity-40: #9d32b266;
+  --color-primary-opacity-30: #9d32b24d;
+  --color-primary-opacity-20: #9d32b233;
+  --color-primary-opacity-10: #9d32b21a;
+}
+
+[data-theme='dark-blue'] {
+  @include theme-dark-blue;
+}
+
+[data-theme='teal-blue'] {
+  @include theme-teal-blue;
+}
+
+[data-theme='green'] {
+  @include theme-green;
+}
+
+[data-theme='orange'] {
+  @include theme-orange;
+}
+
+[data-theme='purple'] {
+  @include theme-purple;
+}

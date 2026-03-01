@@ -1,0 +1,64 @@
+.wrapper {
+  padding: 16px 18px;
+  background-color: var(--color-white);
+  border-radius: var(--radius-xl);
+
+  :global {
+    .apexcharts {
+      &-grid-borders line,
+      &-ycrosshairs,
+      &-gridline,
+      &-xaxis-tick {
+        stroke: var(--color-white);
+      }
+
+      &-align-center {
+        justify-content: center !important;
+        transform: translateY(-20px);
+      }
+
+      &-legend {
+        &-series {
+          width: 100%;
+          margin: 0 !important;
+          padding: 3px 0 !important;
+          justify-content: space-between;
+        }
+
+        &-text {
+          flex-grow: 1 !important;
+          display: flex !important;
+          justify-content: space-between !important;
+          column-gap: 10px !important;
+
+          &-name {
+            font-size: 14px;
+            color: #404040 !important;
+          }
+
+          &-value {
+            font-weight: 600;
+            font-size: 14px;
+            color: var(--color-dark-1000) !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.info {
+  margin-bottom: 15px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-dark-1000);
+}
+
+.description {
+  margin-top: 4px;
+  font-size: 12px;
+  color: var(--color-dark-900);
+}

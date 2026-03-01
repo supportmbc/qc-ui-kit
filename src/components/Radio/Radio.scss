@@ -1,0 +1,15 @@
+.ant-radio {
+  &-wrapper:not(.ant-radio-wrapper-disabled):hover,
+  &:not(.ant-radio-disabled):hover {
+    .ant-radio-inner {
+      border-color: var(--color-primary-1000) !important;
+    }
+  }
+
+  &-checked:not(.ant-radio-disabled) {
+    .ant-radio-inner {
+      background-color: var(--color-primary-1000) !important;
+      border-color: var(--color-primary-1000) !important;
+    }
+  }
+}

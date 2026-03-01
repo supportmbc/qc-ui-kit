@@ -1,0 +1,254 @@
+.wrapper {
+  display: flex;
+  column-gap: 16px;
+  padding: 12px;
+  background-color: var(--color-white);
+  border: 1px solid var(--color-white);
+  border-radius: var(--radius-xl);
+  box-shadow: 0 1px 3px 0 #a6afc366;
+  cursor: pointer;
+
+  &--type {
+    &-CRITICAL {
+      background-color: #ffebeb;
+      border-color: var(--color-red);
+    }
+  }
+
+  &--selected {
+    background-color: var(--color-primary-opacity-10);
+    border-color: var(--color-primary-1000);
+  }
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.images {
+  display: flex;
+  column-gap: 8px;
+}
+
+.image {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 176px;
+  height: 258px;
+  background-color: var(--color-primary-opacity-10);
+  border-radius: var(--radius-md);
+
+  .no {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 12px;
+    color: #d4d3f6;
+  }
+
+  img {
+    width: 100%;
+    height: 258px;
+    object-fit: cover;
+    border-radius: var(--radius-md);
+  }
+}
+
+.overlay {
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 4px 6px;
+  font-weight: 500;
+  font-size: 14px;
+  background-color: #ffffff4d;
+  backdrop-filter: blur(4px);
+  color: var(--color-white);
+  border: 1px solid #ffffff4d;
+  border-radius: 46px;
+}
+
+.info {
+  flex-grow: 1;
+  display: flex;
+  column-gap: 20px;
+}
+
+.id {
+  display: flex;
+  align-items: center;
+  column-gap: 8px;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.details {
+  margin-bottom: 12px;
+}
+
+.detail {
+  display: flex;
+  column-gap: 8px;
+  font-size: 14px;
+  line-height: 22px;
+
+  &:nth-child(1),
+  &:nth-child(2) {
+    height: 44px;
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 4px;
+  }
+
+  &Label {
+    min-width: 110px;
+    font-weight: 600;
+    color: var(--color-dark-1000);
+  }
+
+  &Value {
+    display: -webkit-box;
+    color: var(--color-dark-900);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}
+
+.dates {
+  display: flex;
+  column-gap: 30px;
+}
+
+.date {
+  &Label {
+    display: flex;
+    align-items: center;
+    column-gap: 4px;
+    margin-bottom: 4px;
+    font-size: 12px;
+    color: var(--color-dark-900);
+  }
+
+  &Value {
+    font-weight: 600;
+    font-size: 14px;
+    color: var(--color-dark-1000);
+  }
+}
+
+.left {
+  flex-grow: 1;
+}
+
+.right {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 8px;
+  width: 230px;
+  padding: 4px 4px 4px 16px;
+  border-left: 1px solid var(--color-dark-300);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-bottom: 8px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  column-gap: 6px;
+  text-wrap: nowrap;
+  font-weight: 500;
+  color: var(--color-dark-800);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+
+  &Red {
+    color: var(--color-red);
+  }
+}
+
+.btns {
+  display: flex;
+  column-gap: 8px;
+  width: 100%;
+  margin-top: auto;
+}
+
+@media (max-width: 991px) {
+  .wrapper {
+    flex-direction: column;
+    row-gap: 8px;
+    cursor: default;
+  }
+
+  .image,
+  .image img {
+    height: 120px;
+  }
+
+  .info {
+    flex-direction: column;
+    row-gap: 8px;
+  }
+
+  .detail {
+    &:nth-child(1),
+    &:nth-child(2) {
+      height: auto;
+    }
+  }
+
+  .left {
+    .dates {
+      padding: 8px;
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--color-dark-300);
+    }
+  }
+
+  .right {
+    width: 100%;
+    padding: 0;
+    border-left: none;
+
+    .items {
+      width: 100%;
+      flex-direction: row;
+      column-gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .item {
+      width: calc((100% - 16px) / 2);
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  .image {
+    width: calc((100% - 8px) / 2);
+  }
+
+  .dates {
+    column-gap: 12px;
+  }
+}
