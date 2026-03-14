@@ -1,7 +1,7 @@
 {
-  "name": "@islombek-fd/mbc-ui-kit",
+  "name": "@supportmbc/qc-ui-kit",
   "description": "UI kit for MBC",
-  "version": "2.0.87",
+  "version": "1.0.4",
   "license": "MIT",
   "author": {
     "name": "Islombek_Qurbonov",
@@ -29,7 +29,7 @@
     "generate": "plop --plopfile tools/generators/index.js"
   },
   "publishConfig": {
-    "@islombek-fd:registry": "https://npm.pkg.github.com/"
+    "@supportmbc:registry": "https://npm.pkg.github.com/"
   },
   "peerDependencies": {
     "@tinymce/tinymce-react": "^6.3.0",
